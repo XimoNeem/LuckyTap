@@ -1,18 +1,115 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+
+    height: 100%;
 }
 
-.container {
+.user-info {
+    height: 40px;
+    display: flex;
+    flex-direction: row; /* горизонтальное расположение элементов */
+    justify-content: center; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    align-content: space-between;
+}
+
+.game-container {
+    width: 350px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0,0,0) 0%, rgb(52, 134, 255) 30%);
     text-align: center;
 }
 
-button {
-    padding: 20px;
-    font-size: 18px;
+.main-container {
+    border-radius: 34px 34px 0px 0px;
+    background-color: #1a1a2e;
+    border: 1px solid transparent;
+    border-image: linear-gradient(rgb(0,0,0), rgb(52, 134, 255));
+    background-image: url('../assets/gameBackground.png');
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 50%;
+    padding: 10px;
+}
+
+.stat {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.header, .footer, .progress {
+    margin-bottom: 10px;
+}
+
+.header .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .user-info .username {
+    font-weight: bold;
+}
+
+.header .user-info .stats .stat {
+    margin-left: 10px;
+}
+
+.header .profit-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.header .coins {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.game-area {
+    margin: 20px 0;
+    position: relative;
+}
+
+.game-area .astronaut {
+    width: 100px;
     cursor: pointer;
+}
+
+.click-count {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .footer-item {
+    cursor: pointer;
+    padding: 5px 10px;
 }

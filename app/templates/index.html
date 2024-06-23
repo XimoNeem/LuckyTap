@@ -3,9 +3,39 @@
 {% block title %}Game{% endblock %}
 
 {% block content %}
-<h1>Lucky tap</h1>
-<p>Clicks: <span id="click-count">0</span></p>
-<button id="clicker-button">Click me!</button>
-
+<div class="game-container">
+    <div class="user-info">
+        <span class="username">{{name}}</span>
+        <span class="stat">⭐ {{ stars }}</span>
+        <span class="stat">💎 {{ diamonds}}</span>
+    </div>
+    <div class="main-container">
+        <div class="header">
+            <div class="profit-info">
+                <div class="profit-tab">Profit for Tab: +2</div>
+                <div class="coin-for-apa">Coin for APA: 25K</div>
+                <div class="profit-taps">Profit for Taps: 53</div>
+            </div>
+            <div class="coins">
+                <span class="coin-count">999 999</span>
+            </div>
+        </div>
+        <div class="game-area">
+            <img src="/static/assets/astronaut.png" class="astronaut" id="clicker-button" alt="Astronaut">
+        </div>
+        <div class="progress">
+            <div class="progress-item">3/10</div>
+            <div class="progress-item">1500/1500</div>
+            <div class="progress-item">Boost</div>
+        </div>
+        <div class="footer">
+            <div class="footer-item">Farm</div>
+            <div class="footer-item">Mine</div>
+            <div class="footer-item">Friends</div>
+            <div class="footer-item">Earn</div>
+            <div class="footer-item">AirDrop</div>
+        </div>
+    </div>
+</div>
 <script src="/static/js/script.js"></script>
 {% endblock %}
