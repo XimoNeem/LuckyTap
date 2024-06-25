@@ -40,3 +40,9 @@ def set_name(id, name):
             cursor = db.cursor()
             cursor.execute(f'UPDATE clicks SET name = ? WHERE id = {id}', (name,))
 
+def get_user_by_id(id):
+    with closing(sqlite3.connect(DATABASE)) as db:
+        with db:
+            cursor = db.cursor()
+            cursor.execute(f"SELECT * FROM clicks WHERE id={id}")
+            return cursor.fetchall()

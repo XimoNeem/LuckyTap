@@ -4,16 +4,22 @@ html {
     padding: 0;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #1a1a2e;
     color: #fff;
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 
+    width: 100%;
     height: 100%;
 }
 
@@ -27,7 +33,6 @@ body {
 }
 
 .game-container {
-    width: 350px;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgb(0,0,0) 0%, rgb(52, 134, 255) 30%);
     text-align: center;
@@ -46,10 +51,11 @@ body {
 }
 
 .stat {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px;
 }
-
+profit-info
 .header, .footer, .progress {
     margin-bottom: 10px;
 }

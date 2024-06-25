@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Game{% endblock %}
+
+{% block content %}
+
+<div class="container-main">
+    <div class="header">
+        <div class="header-content">
+            <span class="user-icon">🦱</span>
+            <span class="username">{{ name }}</span>
+            <span class="header-item">⭐ {{ stars }}</span>
+            <span class="header-item">💎 {{ diamonds}}</span>
+            <span class="wallet-button">💎</span>
+        </div>
+    </div>
+    <div class="game">
+        <div class="game-content">
+            <div class="profit-content">
+                <div class="profit-item">Profit for Tab: 💰+2</div>
+                <div class="profit-item">Coin for APA: 25K</div>
+                <div class="profit-item">Profit for Taps: 💰53</div>
+            </div>
+            <div class="coins">
+                <span class="coin-count">💰 999 999</span>
+            </div>
+            <img src="/static/assets/astronaut.png" class="astronaut" id="clicker-button" alt="Astronaut">
+            <div class="boost-container">
+                <div class="boost-item">🍀3/10</div>
+                <div class="boost-item">💰1500/1500</div>
+                <div class="boost-item">Boost🚀</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-item">⚙️<br>Farm</div>
+                <div class="footer-item">⚙️<br>Mine</div>
+                <div class="footer-item">⚙️<br>Friends</div>
+                <div class="footer-item">⚙️<br>Earn</div>
+                <div class="footer-item">⚙️<br>AirDrop</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/script.js"></script>
+
+
+{% endblock %}
