@@ -1,11 +1,122 @@
 {% extends "base.html" %}
 
-{% block title %}Game{% endblock %}
+{% block title %}Wallet{% endblock %} 
 
 {% block content %}
 
-<div class="game-container">
-    <span>WALLET</span>
+<div class="container-main">
+    <div class="header">
+        <div class="header-content">
+            <span class="page-name">Wallet</span>
+            <a class="header-button" href="/">◀️</a>
+        </div>
+    </div>
+    <div class="page page-home">
+        <div class="items-container">
+            <div class="warning-item">
+                <div class="warning-icon">
+                    <img src="../static/assets/icons/buttons/warning.svg" alt="Bitcoin Icon">
+                </div>
+                <div class="warning-text">
+                    This is a beta version of the testing platform,all balances are subject to change unilaterallyand belong to the developer company
+                </div>
+            </div>
+            <div class="crypto-item">
+                <div class="crypto-icon">
+                    <img src="../static/assets/icons/currency/coin.svg" alt="Bitcoin Icon">
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-name">Coin</div>
+                    <div class="crypto-rate">$35,000</div>
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-amount">0.06244358</div>
+                    <div class="crypto-balance">$1440.83</div>
+                </div>
+            </div>
+            <div class="crypto-item">
+                <div class="crypto-icon">
+                    <img src="../static/assets/icons/currency/btc.svg" alt="Bitcoin Icon">
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-name">Coin</div>
+                    <div class="crypto-rate">$35,000</div>
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-amount">0.06244358</div>
+                    <div class="crypto-balance">$1440.83</div>
+                </div>
+            </div>
+            <div class="crypto-item">
+                <div class="crypto-icon">
+                    <img src="../static/assets/icons/currency/star.svg" alt="Bitcoin Icon">
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-name">Coin</div>
+                    <div class="crypto-rate">$35,000</div>
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-amount">0.06244358</div>
+                    <div class="crypto-balance">$1440.83</div>
+                </div>
+            </div>
+            <div class="crypto-item">
+                <div class="crypto-icon">
+                    <img src="../static/assets/icons/currency/ton.svg" alt="Bitcoin Icon">
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-name">Coin</div>
+                    <div class="crypto-rate">$35,000</div>
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-amount">0.06244358</div>
+                    <div class="crypto-balance">$1440.83</div>
+                </div>
+            </div>
+            <div class="crypto-item">
+                <div class="crypto-icon">
+                    <img src="../static/assets/icons/currency/usdt.svg" alt="Bitcoin Icon">
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-name">Coin</div>
+                    <div class="crypto-rate">$35,000</div>
+                </div>
+                <div class="crypto-details">
+                    <div class="crypto-amount">0.06244358</div>
+                    <div class="crypto-balance">$1440.83</div>
+                </div>
+            </div>
+            <div class="settings-bar">
+                <a href="/settings" class="settings-bar-item">
+                    <div class="settings-bar-icon">
+                        <img src="../static/assets/icons/buttons/setting.svg" alt="Icon 1">
+                    </div>
+                    <div class="settings-bar-text">Settings</div>
+                </a>
+                <a href="/settings" class="settings-bar-item">
+                    <div class="settings-bar-icon">
+                        <img src="../static/assets/icons/buttons/setting.svg" alt="Icon 1">
+                    </div>
+                    <div class="settings-bar-text">Settings</div>
+                </a>
+                <a href="/settings" class="settings-bar-item">
+                    <div class="settings-bar-icon">
+                        <img src="../static/assets/icons/buttons/setting.svg" alt="Icon 1">
+                    </div>
+                    <div class="settings-bar-text">Settings</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-item">⚙️<br>Farm</div>
+            <div class="footer-item">⚙️<br>Mine</div>
+            <div class="footer-item">⚙️<br>Friends</div>
+            <div class="footer-item">⚙️<br>Earn</div>
+            <div class="footer-item">⚙️<br>AirDrop</div>
+        </div>
+    </div>
 </div>
 <script src="/static/js/script.js"></script>
 {% endblock %}

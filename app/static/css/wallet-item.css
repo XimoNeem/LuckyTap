@@ -1,0 +1,48 @@
+.crypto-item {
+    background: rgba(255, 255, 255, 0.163);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ffffff8b;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    height: 60px;
+    color: white;
+}
+
+.crypto-item .crypto-icon {
+    margin-right: 20px;
+}
+
+.crypto-item .crypto-icon img {
+    width: 60px;
+    height: auto;
+}
+
+.crypto-item .crypto-details {
+    flex: 1;
+}
+
+.crypto-item .crypto-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.crypto-item .crypto-rate {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.crypto-item .crypto-amount {
+    text-align: end;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.crypto-item .crypto-balance {
+    text-align: end;
+    font-size: 14px;
+    color: #666;
+}

@@ -28,7 +28,8 @@ async def get_game(request: Request):
 
 @app.get("/settings")
 async def get_settings(request: Request):
-    return templates.TemplateResponse("settings.html", {"request": request})
+    context = {"request": request}
+    return templates.TemplateResponse("settings.html", context)
 
 @app.get("/wallet")
 async def get_settings(request: Request):
