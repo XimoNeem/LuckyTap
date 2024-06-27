@@ -35,6 +35,21 @@ async def get_settings(request: Request):
 async def get_settings(request: Request):
     return templates.TemplateResponse("wallet.html", {"request": request})
 
+@app.get("/mine")
+async def get_settings(request: Request):
+    return templates.TemplateResponse("mine.html", {"request": request})
+
+@app.get("/friends")
+async def get_settings(request: Request):
+    return templates.TemplateResponse("friends.html", {"request": request})
+
+@app.get("/earn")
+async def get_settings(request: Request):
+    return templates.TemplateResponse("earn.html", {"request": request})
+
+@app.get("/airdrop")
+async def get_settings(request: Request):
+    return templates.TemplateResponse("airdrop.html", {"request": request})
 # === API ===
 
 @app.get("/api/clicks")
